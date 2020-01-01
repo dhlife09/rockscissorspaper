@@ -33,26 +33,26 @@ print(m, '을 선택했어요!')
 import random
 k = random.randint(1, 3)
 if k == 1:
-    random = '가위'
+    i = '가위'
 elif k == 2:
-    random = '보'
+    i = '보'
 elif k == 3:
-    random = '바위'
+    i = '바위'
 else:
     print('프로그램에서 오류가 발생했어요! 42L')
 
-print (k)
+print (i)
 
-if m == k:
+if m == i:
     result = d
 elif m == a:
-    if k == c:
+    if i == c:
         result = w
 elif m == b:
-    if k == a:
+    if i == a:
         result = w
 elif m == c:
-    if k == b:
+    if i == b:
         result = w
 else:
     result = l
