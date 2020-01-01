@@ -41,7 +41,6 @@ elif k == 3:
 else:
     print('프로그램에서 오류가 발생했어요! 42L')
 
-print (i)
 
 if m == i:
     result = d
@@ -64,10 +63,10 @@ elif m == c:
 
 #게임 결과
 if result == w:
-    print('게임이 끝났습니다! 당신의' ,result,'!')
+    print('게임이 끝났습니다! 컴퓨터는', i,'를 냈어요. 당신의' ,result,'!')
 elif result == l:
-    print('게임이 끝났습니다! 당신의' ,result,'!')
+    print('게임이 끝났습니다! 컴퓨터는', i,'를 냈어요. 당신의' ,result,'!')
 elif result == d:
-        print('게임이 끝났습니다!', result,'!')
+    print('게임이 끝났습니다! 컴퓨터는', i,'를 냈어요.' ,result,'!')
 else:
     print('오류가 발생했어요!')
