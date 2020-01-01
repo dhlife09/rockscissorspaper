@@ -48,14 +48,18 @@ if m == i:
 elif m == a:
     if i == c:
         result = w
+    else:
+        result = l
 elif m == b:
     if i == a:
         result = w
+    else:
+        result = l
 elif m == c:
     if i == b:
         result = w
-else:
-    result = l
+    else:
+        result = l
 
 
 #게임 결과
