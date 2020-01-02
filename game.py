@@ -16,18 +16,29 @@ w = '승리'
 d = '비겼군요'
 l = '패배'
 
-#응답 대기
-s = input('"가위/바위/보"중에서 무엇을 할 지 입력해주세요.\n만약 가위를 낸다면 가위 만 입력해주세요.\n입력: ') #사용자의 입력을 변수에 저장
-if s == '가위':
-    m = '가위'
-elif s == '보':
-    m = '보'
-elif s == '바위':
-    m = '바위'
-else:
-    print('정확한 값을 입력해 주세요.')
+#INTRO
+print('\n')
+print(' ==========')
+print(' 가위바위보 게임')
+print(' Made by dhlife09')
+print(' (github.com/dhlife09)')
+print(' ==========')
+print('\n')
 
-print(m, '을 선택했어요!')
+#응답 대기
+s = None
+while s not in [ '가위', '바위', '보']:
+    s = input(' "가위/바위/보" 중에 무엇을 낼까요? >> ') #사용자의 입력을 변수에 저장
+    if s == '가위':
+        m = '가위'
+    elif s == '보':
+     m = '보'
+    elif s == '바위':
+     m = '바위'
+    else:
+        print(' "가위/바위/보" 중 낼 것 만 입력해 주세요! (예시: 가위를 낸다면 "가위" 만 입력.)')
+print('\n')
+print(' ', m, '를 선택했어요!')
 
 #랜덤
 import random
@@ -39,7 +50,7 @@ elif k == 2:
 elif k == 3:
     i = '바위'
 else:
-    print('프로그램에서 오류가 발생했어요! 42L')
+    print(' 프로그램에서 오류가 발생했어요! 53L')
 
 
 if m == i:
@@ -60,13 +71,17 @@ elif m == c:
     else:
         result = l
 
+print('\n') #게임 결과 출력 전 공백
 
 #게임 결과
 if result == w:
-    print('게임이 끝났습니다! 컴퓨터는', i,'를 냈어요. 당신의' ,result,'!')
+    print(' 게임이 끝났습니다! 컴퓨터는', i,'를 냈어요. 당신의' ,result,'!')
 elif result == l:
-    print('게임이 끝났습니다! 컴퓨터는', i,'를 냈어요. 당신의' ,result,'!')
+    print(' 게임이 끝났습니다! 컴퓨터는', i,'를 냈어요. 당신의' ,result,'!')
 elif result == d:
-    print('게임이 끝났습니다! 컴퓨터는', i,'를 냈어요.' ,result,'!')
+    print(' 게임이 끝났습니다! 컴퓨터는', i,'를 냈어요.' ,result,'!')
 else:
-    print('오류가 발생했어요!')
+    print(' 오류가 발생했어요! 83L')
+
+print('\n') #게임 종료
+print('\n') #게임 종료
